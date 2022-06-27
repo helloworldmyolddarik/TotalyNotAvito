@@ -21,6 +21,7 @@ public class Order {
     private Long id;
     @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
     @JoinColumn
+    @Column(name = "seller_user")
     private User seller;
     @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
     @JoinColumn
